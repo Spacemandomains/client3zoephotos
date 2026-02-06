@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Event &amp; Tickets - Midnight Gold Edition</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#C6A44D", // Antique Gold
+                        "secondary": "#8C6A2F", // Bronze
+                        "background-dark": "#0B1220", // Deep Midnight Navy
+                        "background-card": "#111a2d", // Slightly lighter navy for cards
+                        "text-main": "#F5F5F5", // Soft White
+                        "text-muted": "#94A3B8", // Slate Gray
+                        "nav-dark": "#0B1220" 
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                        'gradient-luxury': 'linear-gradient(to right, #C6A44D, #E5C579, #C6A44D)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B1220; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b; 
+            border-radius: 2px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C6A44D; 
+        }.glass {
+            background: rgba(17, 26, 45, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(198, 164, 77, 0.1);
+        }
+        .glass-gold {
+            background: linear-gradient(135deg, rgba(198, 164, 77, 0.1), rgba(11, 18, 32, 0.8));
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(198, 164, 77, 0.4);
+            box-shadow: 0 0 25px rgba(198, 164, 77, 0.1);
+        }
+        .glass-bronze {
+            background: rgba(140, 106, 47, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(140, 106, 47, 0.3);
+            box-shadow: 0 0 20px rgba(140, 106, 47, 0.1);
+        }h1, h2, h3, h4, h5, h6 {
+            color: #F5F5F5;
+        }
+        p {
+            color: #94A3B8;
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-text-main font-display overflow-x-hidden selection:bg-primary selection:text-[#0B1220]">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="fixed top-0 z-50 w-full glass border-b border-[#1e293b]">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20"> 
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl">diamond</span> 
+<span class="text-text-main text-xl font-bold tracking-tight uppercase">International Zoe</span>
+</div>
+<a class="bg-primary hover:bg-[#b09040] text-background-dark text-sm font-bold px-8 py-4 rounded-md transition-all shadow-[0_0_15px_rgba(198,164,77,0.3)] uppercase tracking-wide" href="#tickets">
+                Get Tickets
+            </a>
+</div>
+</div>
+</header>
+<main class="flex-grow pt-20">
+<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/90 to-background-dark/40 z-10"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background-dark/95 via-transparent to-background-dark/95 z-10"></div>
+<img alt="Background" class="w-full h-full object-cover opacity-50" data-alt="Vibrant nightlife rooftop party scene with dark lighting and purple hues" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD62Yj5fQxif6ZT5lui5Xhn9-TS_uSaDxAv9bxyIJlB6ni4kawJToF74JY5Ij894GfJm5IKyNF54baAhMVYUid0cY4v_z5yDcUY08Tz88-WASTNhMunu1WhMinW05ZSLtoAEoCblctvhcRbGLZ8SQ_JAOYU9ZVEV-LshFq-EHAVugxeLfxei23U31YkB88SiOZCu4c_WkbzIXAIGwkHw-ylw_G5aBYQKiqr7Ze1LfvcP6HAQFNXk5-XZ9FP4lnsHahebHhxRnlxWg"/>
+</div>
+<div class="relative z-20 text-center px-4 max-w-5xl mx-auto flex flex-col items-center gap-8">
+<div class="inline-flex items-center gap-3 px-5 py-2 rounded-sm border border-secondary/50 bg-secondary/10 backdrop-blur-md">
+<span class="material-symbols-outlined text-primary text-sm">calendar_today</span>
+<span class="text-sm font-bold uppercase tracking-widest text-primary">Sat, Dec 14 • 9:00 PM</span>
+</div>
+<h1 class="text-5xl md:text-7xl lg:text-9xl font-black leading-[0.85] tracking-tighter text-white drop-shadow-2xl">
+                Come outside<br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-b from-[#F5F5F5] to-gray-500">in Cartagena</span>
+</h1>
+<p class="text-lg md:text-2xl text-text-muted max-w-3xl font-medium leading-relaxed">
+                The ultimate nightlife experience hosted by <span class="text-primary font-bold">International Zoe</span>. 
+                A curated night of vibes, views, and <span class="text-secondary">premium access</span>.
+            </p>
+<div class="flex flex-col sm:flex-row gap-6 w-full justify-center mt-8">
+<a class="min-w-[200px] py-5 px-8 rounded-sm bg-primary hover:bg-[#b09040] text-background-dark font-bold text-lg flex items-center justify-center gap-3 shadow-[0_0_25px_rgba(198,164,77,0.4)] transition-all transform hover:-translate-y-1 uppercase tracking-wide" href="#tickets">
+<span class="material-symbols-outlined">local_activity</span>
+                    Reserve Spot
+                </a>
+<a class="min-w-[200px] py-5 px-8 rounded-sm bg-transparent hover:bg-white/5 border border-white/20 backdrop-blur-md text-white font-bold text-lg flex items-center justify-center gap-3 transition-all uppercase tracking-wide" href="#location">
+<span class="material-symbols-outlined">map</span>
+                    View Map
+                </a>
+</div>
+</div>
+</section>
+<section class="py-24 px-4 md:px-10 bg-background-dark relative">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-3xl md:text-5xl font-bold mb-16 flex items-center gap-4">
+<span class="w-1.5 h-12 bg-primary"></span> 
+                What You Get
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group glass p-3 rounded-sm hover:border-primary/30 transition-all duration-300">
+<div class="aspect-video w-full rounded-sm overflow-hidden relative">
+<img alt="Venue" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-0 group-hover:saturate-100" data-alt="Crowd dancing at a dimly lit exclusive club venue" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXxu_nyGqVO0zIP9jB9JN56kdQDBlG0I-vVdKxQRRB0Tv7ClfbRYcYtj-sxAyr-r3jGfYZt4XUh1luJoLbSdUtOkTQmlkGxYALNdoF-f55dwD45u9QycECADF8yHYU2iSHVLcKZXxPUfZnwUHL17nYJvFtxx680j3ethZYMkbUYO_lWatRDQDlRru4B0jrrJQFeUlrupfUcuXuWz8DenUInAkH1nwSzZ7JW7r3B-zjIvhoMeX2hK7Zk8BYHd4LVWNPhH92qkZ2RiI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-primary">
+<span class="material-symbols-outlined text-3xl">apartment</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-3 text-white">Exclusive Venue</h3>
+<p class="text-text-muted text-base leading-relaxed">Access to the most sought-after rooftop in the historic center with panoramic city views.</p>
+</div>
+</div>
+<div class="group glass p-3 rounded-sm hover:border-primary/30 transition-all duration-300">
+<div class="aspect-video w-full rounded-sm overflow-hidden relative">
+<img alt="DJs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-0 group-hover:saturate-100" data-alt="DJ mixing music on a deck with colorful lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNsZfijEUONnUXNrdhWLJLDEVsZO7U2GO-ydXrvCQh0NyoDJXSYmhAY8Z4phLhNlJpPL2-_J-UD73oz_WdkR6rm0Px5dV7p4c8TX11oJvOLd9rVqm5UNVhUSmuB2tEYJgEsPu_evto51Gf2p4AWyVvylbU1AL-vtL1lRLudrxCIlX4FlnwTbxHVEmMTiyl4cZUcvDluWvNr_vdZysDZQsb1mkitS7EqttVROB30u2ukTtQVAi9x1QZJFRF6FZr5P4Q9QpVcbP5Hus"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-primary">
+<span class="material-symbols-outlined text-3xl">graphic_eq</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-3 text-white">Curated Vibes</h3>
+<p class="text-text-muted text-base leading-relaxed">Music by top international DJs and local legends spinning Afrobeat, Reggaeton, and House.</p>
+</div>
+</div>
+<div class="group glass p-3 rounded-sm hover:border-primary/30 transition-all duration-300">
+<div class="aspect-video w-full rounded-sm overflow-hidden relative">
+<img alt="Drinks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-0 group-hover:saturate-100" data-alt="Bartender pouring a premium cocktail with garnish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGj2kpJXH-zTzp1XI1WoFUg-bN2VsE1jnuDvYGnLof8xWaJYJaUTO96hqz5OMnYCd7iM4HHZ7f9HO3BlDcVR-2230HOGx7ckfSXzHUVlEIK7A5bgEf3P6z6regnebOAEC5KaRJe_6KwmqUPo0ve6EIBZ8tW1mC-eT8WDekWTVMq2RAuEdIg_0Y9A_iDx_kTcsa_YrtbzgfCHqMFyX6QH-3exHHNKwIx7_EV5gy5MbsLMgp_Vj9VLkwVRqvcchiXn9UH6BUSsPuDmA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-primary">
+<span class="material-symbols-outlined text-3xl">liquor</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-3 text-white">Premium Drinks</h3>
+<p class="text-text-muted text-base leading-relaxed">Top-shelf liquor options and signature cocktails available at our dedicated bars.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4 md:px-10 bg-[#0F1829]">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-3xl font-bold mb-12 text-center text-white/90 uppercase tracking-widest">Night Schedule</h2>
+<div class="relative pl-10 border-l border-secondary/30 space-y-12">
+<div class="relative group">
+<div class="absolute -left-[45px] top-1.5 h-2.5 w-2.5 bg-secondary rotate-45 group-hover:bg-primary transition-colors"></div> 
+<h4 class="text-primary font-bold text-lg tracking-wide">9:00 PM</h4>
+<p class="text-white font-bold text-2xl mt-1">Doors Open</p>
+<p class="text-text-muted text-base mt-2">Check-in starts. Welcome drinks for VIPs.</p>
+</div>
+<div class="relative group">
+<div class="absolute -left-[45px] top-1.5 h-2.5 w-2.5 bg-primary rotate-45 shadow-[0_0_10px_rgba(198,164,77,0.8)]"></div>
+<h4 class="text-primary font-bold text-lg tracking-wide">11:00 PM</h4>
+<p class="text-white font-bold text-2xl mt-1">Special Guest Set</p>
+<p class="text-text-muted text-base mt-2">International Zoe takes the stage.</p>
+</div>
+<div class="relative group">
+<div class="absolute -left-[45px] top-1.5 h-2.5 w-2.5 bg-secondary rotate-45 group-hover:bg-primary transition-colors"></div>
+<h4 class="text-primary font-bold text-lg tracking-wide">2:00 AM</h4>
+<p class="text-white font-bold text-2xl mt-1">After Hours</p>
+<p class="text-text-muted text-base mt-2">Exclusive lounge access for All-Access pass holders.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 px-4 md:px-10 bg-background-dark relative overflow-hidden" id="tickets">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-primary/5 rounded-full blur-[150px] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="text-center mb-20">
+<h2 class="text-4xl md:text-6xl font-black mb-6 text-white">Secure Your Access</h2>
+<p class="text-text-muted text-lg tracking-wide">Limited capacity event. Prices increase at the door.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
+<div class="glass rounded-sm p-8 flex flex-col gap-8 relative border-t-2 border-t-white/10">
+<div>
+<h3 class="text-2xl font-bold text-white">General Admission</h3>
+<p class="text-sm text-text-muted mt-2 uppercase tracking-wider">Standard entry access</p>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-bold text-white">$50</span>
+<span class="text-sm text-gray-500">USD</span>
+</div>
+<ul class="space-y-4 text-sm text-gray-300">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-base">check</span> Entry to Venue</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-base">check</span> Access to Main Bar</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-base">check</span> Standard Dance Floor</li>
+</ul>
+<button class="w-full py-4 rounded-sm bg-white/5 hover:bg-white/10 border border-white/10 text-white font-bold flex items-center justify-center gap-2 transition-colors mt-auto uppercase tracking-wider text-sm">
+<span class="material-symbols-outlined text-sm">credit_card</span>
+                        Pay &amp; RSVP
+                    </button>
+</div>
+<div class="glass-gold rounded-sm p-8 flex flex-col gap-8 relative transform md:-translate-y-6">
+<div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary to-[#E5C579] text-background-dark text-xs font-black px-4 py-1.5 tracking-widest uppercase shadow-lg">
+                        Most Popular
+                    </div>
+<div>
+<h3 class="text-3xl font-black text-primary">VIP Access</h3>
+<p class="text-sm text-primary/70 mt-2 uppercase tracking-wider">Skip the line + perks</p>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-5xl font-bold text-white">$120</span>
+<span class="text-sm text-primary/60">USD</span>
+</div>
+<ul class="space-y-4 text-sm text-white/90 font-medium">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg">star</span> Fast-Track Entry</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg">star</span> 2 Premium Drink Tickets</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg">star</span> Exclusive VIP Area Access</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary text-lg">star</span> Private Bar</li>
+</ul>
+<button class="w-full py-5 rounded-sm bg-primary hover:bg-[#b09040] text-background-dark font-black flex items-center justify-center gap-2 transition-all mt-auto shadow-[0_0_20px_rgba(198,164,77,0.3)] uppercase tracking-wider text-sm">
+<span class="material-symbols-outlined text-sm">credit_card</span>
+                        Pay &amp; RSVP
+                    </button>
+</div>
+<div class="glass-bronze rounded-sm p-8 flex flex-col gap-8 relative border-t-2 border-t-secondary/30">
+<div>
+<h3 class="text-2xl font-black text-white">All Access</h3>
+<p class="text-sm text-secondary mt-2 uppercase tracking-wider">The full Zoe experience</p>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-bold text-white">$300</span>
+<span class="text-sm text-gray-500">USD</span>
+</div>
+<ul class="space-y-4 text-sm text-gray-300">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-base">diamond</span> All VIP Perks Included</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-base">diamond</span> Backstage Access</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-base">diamond</span> Bottle Service Credit ($50)</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-base">diamond</span> Personal Concierge</li>
+</ul>
+<button class="w-full py-4 rounded-sm bg-secondary hover:bg-secondary/80 text-white font-bold flex items-center justify-center gap-2 transition-colors mt-auto shadow-[0_0_15px_rgba(140,106,47,0.2)] uppercase tracking-wider text-sm">
+<span class="material-symbols-outlined text-sm">credit_card</span>
+                        Pay &amp; RSVP
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 px-4 md:px-10 bg-[#080d16] border-t border-white/5" id="location">
+<div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1 space-y-6">
+<h2 class="text-4xl font-bold text-white">The Location</h2>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl mt-1">pin_drop</span>
+<div>
+<p class="text-2xl font-medium text-white">Casa de la Fiesta</p>
+<p class="text-text-muted mt-2 text-lg">Calle Del Torno, Centro Histórico<br/>Cartagena de Indias, Colombia</p>
+</div>
+</div>
+<div class="flex gap-6 pt-6">
+<button class="text-sm font-bold text-primary border-b border-primary pb-1 hover:text-white hover:border-white transition-colors uppercase tracking-wider">Open in Maps</button>
+<button class="text-sm font-bold text-primary border-b border-primary pb-1 hover:text-white hover:border-white transition-colors uppercase tracking-wider">Uber Directions</button>
+</div>
+</div>
+<div class="w-full md:w-1/2 aspect-[4/3] rounded-sm overflow-hidden shadow-2xl border border-white/10 relative group">
+<img alt="Map of Cartagena" class="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Map view of Cartagena Historic Centre showing the venue location" data-location="Cartagena, Colombia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxDI7Jl8kBck6VYJNXQRLa5GRfEiOeMc6-xFc-Qql7nf9L02p4JuBGNNk2bgEAQkpgorKy148M9cAKxxfbQm0xL54dciTcOR6Z64UpVIPMeBb6Squ_a3UwvvFUw0SdaSwc95Jz7umDTGkZCnipX0W-coOtpav8NhlIpnFohn908iv3HUzvYJBtiXEomMjCJeQiRVzInU1suWpihhH9WzKFyZx4jr_5IaE6dG-T4O4va43YSSn7rIOGmKIt73bFw6_CR3KiQpuJ_9c"/>
+<div class="absolute inset-0 flex items-center justify-center bg-[#0B1220]/30 pointer-events-none">
+<span class="material-symbols-outlined text-primary text-6xl drop-shadow-xl animate-bounce">location_on</span>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 px-4 border-t border-white/5 bg-[#05080e]">
+<div class="max-w-4xl mx-auto">
+<p class="text-xs text-gray-600 mb-8 uppercase tracking-widest text-center">--- Design System: Feedback States ---</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-[#0B1220] border border-primary/20 rounded-sm p-8 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">check_circle</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-2">You're on the list!</h3>
+<p class="text-sm text-text-muted mb-6">Check your email for your QR code ticket.</p>
+<button class="text-primary text-sm font-bold hover:text-white transition-colors uppercase tracking-wide border-b border-transparent hover:border-white pb-1">View Ticket</button>
+</div>
+<div class="bg-[#0B1220] border border-red-900/30 rounded-sm p-8 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-red-900/10 text-red-400 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">error</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-2">Payment Cancelled</h3>
+<p class="text-sm text-text-muted mb-6">You haven't been charged. Want to try again?</p>
+<button class="text-red-400 text-sm font-bold hover:text-white transition-colors uppercase tracking-wide border-b border-transparent hover:border-white pb-1">Return to Tickets</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-white/5 bg-[#020305] py-12 px-4">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3 opacity-60 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-2xl text-primary">diamond</span>
+<span class="font-bold text-white uppercase tracking-wider">International Zoe</span>
+</div>
+<div class="flex gap-8 text-sm text-gray-500 font-medium">
+<a class="hover:text-primary transition-colors" href="#">Terms</a>
+<a class="hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<div class="text-xs text-gray-600 uppercase tracking-widest">
+            © 2024 International Zoe Events.
+        </div>
+</div>
+</footer>
+</div>
+
+</body></html>
